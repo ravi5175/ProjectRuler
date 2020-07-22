@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+}
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    padding-top:100px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+#banner_image {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(career-services-center-01.png) no-repeat center center;
+    background-size: cover;
+}
+/*********** HEADER START************/
+.header{
+	background:black;
+	color: white;
+	padding:auto 15px;
+}
+.float{
+  float: left;
+}
+/***********HEADER END**************/
+.content{
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+.notice_box{
+	border: solid 1px black;
+    margin-top: 5px;
+}
+.input{
+	margin: 2px;
+}
+.row3 {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+.box{
+	border: solid 1px black;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7)
+}
