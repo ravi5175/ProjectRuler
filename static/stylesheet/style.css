@@ -1,0 +1,255 @@
+body {
+    font-family: 'Domine', serif;
+    background: url(/static/Images/background.png) no-repeat center center;
+    background-size: cover;
+}
+
+.index_body {
+    background: url(/static/Images/frog.png) no-repeat center center;
+    background-size: cover;
+}
+
+.registraion_body {
+    background: #d1a9d8;
+}
+
+
+/**************** HEADER***********************/
+
+.header {
+    background-color: #183b6a;
+    padding: 5px 0px 2px 0px;
+    margin-bottom: 10px;
+}
+
+h2 a {
+    color: white;
+    text-shadow: 0.5px 0.5px grey;
+}
+
+
+/*****************END************************/
+
+
+/*******************FOOTER*******************/
+
+.foot {
+    background-color: black;
+    color: white;
+}
+
+
+/*******************END**********************/
+
+
+/****************InDEX PAGE*****************/
+
+@media only screen and (min-width: 1025px) {
+    .log-out {
+        position: absolute;
+        top: 4px;
+        right: 50px;
+    }
+}
+
+.btr {
+    background-color: #3f739a;
+    color: white;
+}
+
+.bta {
+    background-color: #e45b5e;
+    color: white;
+}
+
+h5 {
+    text-align: center;
+    background-color: #183b6a;
+    padding: 2px 0px 2px 0px;
+    color: white;
+}
+
+.big_box {
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
+    max-width: 400px;
+    background-color: #9d7790ba;
+    border-radius: 3px;
+}
+
+.video_box {
+    margin: 20px 0px 20px 0px;
+}
+
+
+/********************END*****************************/
+
+
+/***************LOGIN-PAGES***************************/
+
+.login {
+    padding: 268px 0px 220px 0px;
+}
+
+h4 {
+    padding-bottom: 5px;
+    background-color: #dd4644db;
+    color: white;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+
+/********************END*****************************/
+
+
+/****************** USER PAGE***********************/
+
+.profile--table {
+    font-size: small;
+}
+
+center h3 {
+    background-color: #343d4c;
+    color: white;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+.recommended-jobs {
+    max-height: 200px;
+    overflow: auto;
+    margin-bottom: 10px;
+    overflow-x: hidden;
+    padding: 0px
+}
+
+.selection {
+    width: 220px;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+
+.submit {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    padding-top: 2px;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.prefrence_form {
+    border: 1px solid;
+    padding: 0px;
+    margin-bottom: 20px;
+    max-width: 680px;
+}
+
+
+/********************END*****************************/
+
+
+/*******************RECRUITER PAGE*******************/
+
+.profile-table {
+    font-size: small;
+    padding: 50px 0px 300px 0px;
+}
+
+.job_table {
+    padding: 50px 0px 390px 0px;
+}
+
+
+/*******************END*****************************/
+
+
+/*********RECRUITER REGISTERATION FORM**************/
+
+.registration_form {
+    padding: 100px 0px 120px 0px;
+}
+
+
+/*********************END***************************/
+
+
+/******************** Add_Job***********************/
+
+.job-form {
+    padding: 50px 0px 80px 0px;
+}
+
+.tab h5 {
+    margin: 0px;
+    padding: 2px 0px 1px 10px;
+    background-color: #1e304c;
+    color: white;
+    border: solid 1px black;
+    text-align: center;
+}
+
+
+/******************END*************************/
+
+
+/****************APpLY JOBA*******************/
+
+.apply-jobs {
+    max-height: 500px;
+    overflow: auto;
+    margin-bottom: 10px;
+    overflow-x: hidden;
+    padding: 0px
+}
+
+
+/*******************END**********************/
+
+
+/*****************JOBS_PAGE******************/
+
+.jobs_table {
+    padding: 80px 0px 20px 0px;
+}
+
+.buttons {
+    padding-bottom: 110px;
+}
+
+
+/*****************END**********************/
+
+
+/***************MORE JOBS PAGE*************/
+
+.more_jobs_table {
+    padding-top: 50px;
+}
+
+
+/****************END********************/
+
+
+/*************APPLY JOBS******************/
+
+.jobs_table_apply {
+    padding: 120px 0px 100px 0px;
+}
+
+
+/****************END********************/
+
+
+/*************APPLY JOBS******************/
+
+.applications_table {
+    padding: 120px 0px 550px 0px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+
+/****************END********************/
