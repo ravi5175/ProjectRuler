@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recruiter_page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Neuton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet/style.css') }}">
+</head>
+
+<body>
+    <!----------------------------- HEADER START ------------------------>
+    <div class="header">
+        <div class="container">
+            <div class="navbar-header">
+                <center>
+                    <h2>
+                        <a href="home.html">JOB RECOMMENDER</a>
+                    </h2>
+                    <form method="post" id="rlogout"> <button type="submit" name="logout" formtarget="_self" class="btn btn-primary log-out">Log Out</button></form>
+
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------HEADER END--------------------------->
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="col-md-12 profile-table">
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th>COMPANY DETAILS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>COMAPNY NAME:</th>
+                                <td>{{rdata[1]}}</td>
+                            </tr>
+                            <tr>
+                                <th>CONTACT NO:</th>
+                                <td>{{rdata[2]}}</td>
+                            </tr>
+                            <tr>
+                                <th>EMAIL:</th>
+                                <td>{{rdata[3]}}</td>
+                            </tr>
+                            <tr>
+                                <th>ADDRESS:</th>
+                                <td>{{rdata[4]}}</td>
+                            </tr>
+                            <tr>
+                    </table>
+                    <form method="POST" id="addjob">
+                        <div class="col-md-12">
+                            <button type="submit" name="addjob" formtarget="_self" class="btn btn-lg btn-block btr" style="margin-bottom: 10px">ADD JOB</button>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="col-md-6 job_table">
+                <table class="table table-dark">
+                    <tr>
+                        <th>VACANCIES POSTED
+                        </th>
+                        <th>Last DATE</th>
+                        <th>Details</th>
+                    </tr>
+                    {%for i in jdata%}
+                    <tr>
+                        <td>{{i[0]}}</td>
+                        <td>--</td>
+                        <td>
+                            <form method="POST"><button class="btn btn-lg btn-block btn-primary" name="check" type="submit" value="{{i[0]}}" form_target="_self">check</button></form>
+                        </td>
+                    </tr>
+                    {%endfor%}
+                </table>
+            </div>
+        </div>
+    </div>
+    <!----------------------- FOOTER START------------------------>
+    <footer class="foot fixed-bottom">
+        <div class="container text-center">
+            <small>Designed by: Archana Kumari,Ravi Pawar,Kapil Bansal and Sandip Baidya<br>Copyright &copy; EduScent</small>
+        </div>
+    </footer>
+    <!-------------------------FOOTER END------------------------>
+</body>
+
+</html>

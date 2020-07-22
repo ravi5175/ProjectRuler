@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jobs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Neuton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet/style.css') }}">
+</head>
+
+<body>
+    <!----------------------------- HEADER START ------------------------>
+    <div class="header">
+        <div class="container">
+            <div class="navbar-header">
+                <center>
+                    <h2>
+                        <a href="home.html">JOB RECOMMENDER</a>
+                    </h2>
+                    <form method="post" id="rlogout"> <button type="submit" name="logout" formtarget="_self" class="btn btn-primary log-out">Log Out</button></form>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------HEADER END--------------------------->
+    <div class="container">
+        <center>
+            <div class="col-md-6">
+                <div class="col-md-12 jobs_table">
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th>Job DETAILS</th>
+                            </tr>
+                        </thead>
+
+                        <form method="POST">
+                            <tbody>
+                                <tr>
+                                    <th>Job NAME:</th>
+                                    <td><input name='job_name' value='{{det[0][0]}}'>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Job Description:</th>
+                                    <td><input name='job_description' value='{{det[0][2]}}'>
+                                </tr>
+                                <tr>
+                                    <th>Skills Required:</th>
+                                    <td><input name="skills_required" value='{{det[0][1]}}'></td>
+                                </tr>
+                                <tr>
+                                    <th>Expected Salary:</th>
+                                    <td><input name="expected_salary" value='{{det[0][3]}}'></td>
+                                </tr>
+                                <tr>
+                                    <th>State:</th>
+                                    <td><input name="state" value='{{det[0][4]}}'></td>
+                                </tr>
+                                <tr>
+                                    <th>Address:</th>
+                                    <td><input name="address" value='{{det[0][5]}}'></td>
+                                </tr>
+                            </tbody>
+                    </table>
+                    <div>
+                        <button type="submit" name="update" class="btn btn-lg btn-block btn-primary" formtarget="_self"><small>UPDATE</small></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-12 buttons">
+                    <div class="col-md-6 float-left">
+                        <form method="POST">
+                            <button type="submit" name="close" class="btn btn-lg btn-block btn-primary" formtarget="_self"><small>CLOSE</small></button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 float-left">
+                        <form method="POST" id="addjob">
+                            <button type="submit" name="applications" formtarget="_self" class="btn btn-lg btn-block btn-primary"><small>APPLICATIONS</small></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </center>
+    </div>
+    <!----------------------- FOOTER START------------------------>
+    <footer class="foot fixed-bottom">
+        <div class="container text-center">
+            <small>Designed by: Archana Kumari,Ravi Pawar,Kapil Bansal and Sandip Baidya<br>Copyright &copy; EduScent</small>
+        </div>
+    </footer>
+    <!-------------------------FOOTER END------------------------>
+</body>
+
+</html>

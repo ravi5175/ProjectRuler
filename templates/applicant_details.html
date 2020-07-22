@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JOB RECOMMENDER</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Neuton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet/style.css') }}">
+</head>
+
+<body class="index_body">
+    <!----------------------------- HEADER START ------------------------>
+    <div class="header">
+        <div class="container">
+            <div class="navbar-header">
+                <center>
+                    <h2>
+                        <a href="localhost:8080/route">JOB RECOMMENDER</a>
+                    </h2>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------HEADER END--------------------------->
+    <div class="container">
+        <center>
+            <div class="col-md-6">
+                <div class="col-md-12 jobs_table">
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th>PROFILE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>NAME:</th>
+                                <td>{{name[1]}}</td>
+                            </tr>
+                            <tr>
+                                <th>PHONE:</th>
+                                <td>{{name[2]}}</td>
+                            </tr>
+                            <tr>
+                                <th>EMAIL:</th>
+                                <td>{{name[3]}}</td>
+                            </tr>
+                            <tr>
+                                <th>DATE OF BIRTH:</th>
+                                <td>{{name[7]}}</td>
+                            </tr>
+                            <tr>
+                                <th>GENDER>
+                                    <td>{{name[8]}}</td>
+                            </tr>
+                            <tr>
+                                <th>CATEGORY:</th>
+                                <td>{{name[9]}}</td>
+                            </tr>
+                            <tr>
+                                <th>ADDRESS:</th>
+                                <td>{{name[4]}}</td>
+                            </tr>
+                            <tr>
+                                <th>EDUCATION</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>10th MARKS:</th>
+                                <td>{{name[5]}}</td>
+                            </tr>
+                            <tr>
+                                <th>12th MARKS:</th>
+                                <td>{{name[6]}}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </center>
+    </div>
+    <!----------------------- FOOTER START------------------------>
+    <footer class="foot fixed-bottom">
+        <div class="container text-center">
+            <small>Designed by: Archana Kumari,Ravi Pawar,Kapil Bansal and Sandip Baidya<br>Copyright &copy; EduScent</small>
+        </div>
+    </footer>
+    <!-------------------------FOOTER END------------------------>
+</body>
+
+</html>

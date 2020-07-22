@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User_page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Neuton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet/style.css') }}">
+
+</head>
+
+<body class="registraion_body">
+    <!----------------------------- HEADER START ------------------------>
+    <div class="header">
+        <div class="container">
+            <div class="navbar-header">
+                <center>
+                    <h2>
+                        <a href="home.html">JOB RECOMMENDER</a>
+                    </h2>
+                    <form method="post" id="home"><button type="submit" formtarget="_self" value="home" name="home" class="btn btn-primary log-out">Home</button></form>
+                    <form method="post" id="logout"><button type="submit" formtarget="_self" value="logout" name="logout" class="btn btn-danger log-out">Log Out</button></form>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------HEADER END--------------------------->
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="col-md-12 profile--table">
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th>PROFILE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>NAME:</th>
+                                <td>{{name[1]}}</td>
+                            </tr>
+                            <tr>
+                                <th>PHONE:</th>
+                                <td>{{name[2]}}</td>
+                            </tr>
+                            <tr>
+                                <th>EMAIL:</th>
+                                <td>{{name[3]}}</td>
+                            </tr>
+                            <tr>
+                                <th>DATE OF BIRTH:</th>
+                                <td>{{name[7]}}</td>
+                            </tr>
+                            <tr>
+                                <th>GENDER>
+                                    <td>{{name[8]}}</td>
+                            </tr>
+                            <tr>
+                                <th>CATEGORY:</th>
+                                <td>{{name[9]}}</td>
+                            </tr>
+                            <tr>
+                                <th>ADDRESS:</th>
+                                <td>{{name[4]}}</td>
+                            </tr>
+                            <tr>
+                                <th>EDUCATION</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>10th MARKS:</th>
+                                <td>{{name[5]}}</td>
+                            </tr>
+                            <tr>
+                                <th>12th MARKS:</th>
+                                <td>{{name[6]}}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <center>
+                    <div class="col-md-12 clearfix prefrence_form">
+                        <form method="POST" enctype=multipart/form-data>
+                            <center>
+                                <h3>SELECT PREFERENCE</h3>
+                            </center>
+                            <div class="col-md-4 float-left">
+
+                                <select class="selection" name='state'>
+                                      <option value="NULL">Location not Specified</option>
+                                      <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                      <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                      <option value="Assam">Assam</option>
+                                      <option value="Bihar">Bihar</option>
+                                      <option value="CHandigarh">CHandigarh</option>
+                                      <option value="Chhatisgarh">Chhatisgarh</option>
+                                      <option value="Daman And  Diu">Daman And  Diu</option>
+                                      <option value="Delhi">Delhi</option>
+                                      <option value="Goa">Goa</option>
+                                      <option value="Gujarat">Gujarat</option>
+                                      <option value="Haryana">Haryana</option>
+                                      <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                      <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                      <option value="Jharkhand">Jharkhand</option>
+                                      <option value="Kerala">Kerala</option>
+                                      <option value="Lakshadweep">Lakshadweep</option>
+                                      <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                      <option value="Maharashtra">Maharashtra</option>
+                                      <option value="Manipur">Manipur</option>
+                                      <option value="Meshalaya">Meshalaya</option>
+                                      <option value="Mizoram">Mizoram</option>
+                                      <option value="Nagaland">Nagaland</option>
+                                      <option value="Odisha">Odisha</option>
+                                      <option value="Puducherry">Puducherry</option>
+                                      <option value="Punjab">Punjab</option>
+                                      <option value="Rajasthan">Rajasthan</option>
+                                      <option value="Sikkim">Sikkim</option>
+                                      <option value="Tamil Nadu">Tamil Nadu</option>
+                                      <option value="Telangana">Telangana</option>
+                                      <option value="Tripura">Tripura</option>
+                                      <option value="Uttar pradesh">Uttar pradesh</option>
+                                      <option value="Uttrakhand">Uttrakhand</option>
+                                      <option value="West Bengal">West Bengal</option>
+
+                                  </select>
+
+                            </div>
+                            <div class="col-md-4 float-left">
+
+                                <select class="selection" name='sector'>
+                                      <option value="Sector Not Specified">Sector Not Specified</option> 
+                                      <option value="Agriculture and Related Activities">Agriculture and Related Activities</option>
+                                      <option value="Arts and Entertainment">Arts and Entertainment</option>
+                                      <option value="Civil and Construction Works">Civil and Construction Works</option>
+                                      <option value="Education">Education</option>
+                                      <option value="Finance and Insurance">Finance and Insurance</option>
+                                      <option value="Health">Health</option>
+                                      <option value="Hotels, Food Service and Catering">Hotels, Food Service and Catering</option>
+                                      <option value="Household and Domestic Work">Household and Domestic Work</option>
+                                      <option value="International Organizations">International Organizations</option>
+                                      <option value="IT and Communication">IT and Communication</option>
+                                      <option value="Manufacturing">Manufacturing</option>
+                                      <option value="Mining And Quarrying">Mining And Quarrying</option>
+                                      <option value="Operations and Support">Operations and Support</option>
+                                      <option value="Other Service Activities">Other Service Activities</option>
+                                      <option value="Power and Energy">Power and Energy</option>
+                                      <option value="Public Administration and Defense">Public Administration and Defense</option>
+                                      <option value="Real Estate Activities">Real Estate Activities</option>
+                                      <option value="Specialized Professional Services">Specialized Professional Services</option>
+                                      <option value="Transportation and Storage">Transportation and Storage</option>
+                                      <option value="Water Supply, Sewerage and Waste">Water Supply, Sewerage and Waste</option>
+                                      <option value="Management">Management</option>
+                                      <option value="Wholesale and Retail">Wholesale and Retail</option>
+                                  </select>
+
+                            </div>
+
+                            <div class="col-md-4 float-left">
+                                <button type="submit" name="recommender" class="btn submit btn-danger" formtarget="_self">SEARCH</button>
+                            </div>
+                        </form>
+                    </div>
+                </center>
+                <div class="col-md-12 clearfix">
+                    <center>
+                        <h3>RECOMMENDED JOBS</h3>
+                    </center>
+                    <nav class="navbar recommended-jobs">
+                        <table class="table">
+                            <thead>
+                                <tr class="table-primary">
+                                    <th>State</th>
+                                    <th>Vacant Post</th>
+                                    <th>Apply</th>
+                                </tr>
+                            </thead>
+                            {%for i in scrap%}
+                            <tbody>
+                                <tr class="table-warning">
+                                    <td>{{i[1]}}</td>
+                                    <td>{{i[0]}}</td>
+                                    <td><a href={{i[2]}} target="_blank">Click</a></td>
+                                </tr>
+                                {%endfor%}
+                            </tbody>
+                        </table>
+                    </nav>
+                </div>
+                <div class="col-md-12">
+                    <center>
+                        <h3>Applied JOBS</h3>
+                    </center>
+                    <nav class="navbar bg-dark recommended-jobs">
+                        <table class="table">
+                            <thead>
+                                <tr class="table-primary">
+                                    <th>State</th>
+                                    <th>Vacant Post</th>
+
+                                </tr>
+                            </thead>
+                            {%for i in job_applied%}
+                            <tbody>
+                                <tr class="table-warning">
+                                    <td>{{i[5]}}</td>
+                                    <td>{{i[1]}}</td>
+
+                                </tr>
+                                {%endfor%}
+                            </tbody>
+                        </table>
+                    </nav>
+                </div>
+                <form method="POST" id="addjob" class="float-right">
+                    <div class="col-md-12">
+                        <button type="submit" name="more_jobs" class="btn btn-lg btn-danger" formtarget="_self">SEE MORE JOBS</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!----------------------- FOOTER START------------------------>
+    <footer class="foot fixed-bottom">
+        <div class="container text-center">
+            <small>Designed by: Archana Kumari,Ravi Pawar,Kapil Bansal and Sandip Baidya<br>Copyright &copy; EduScent</small>
+        </div>
+    </footer>
+    <!-------------------------FOOTER END------------------------>
+</body>
+
+</html>

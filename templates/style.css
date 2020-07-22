@@ -1,0 +1,112 @@
+body{
+	font-family: 'Domine', serif;
+	background: white;
+}
+/********** HEADER**********/
+.header{
+	background-color: #29204e;
+    padding: 5px 0px 2px 0px;
+    margin-bottom: 30px;
+}
+h2 a{
+	color: white;
+    text-shadow: 0.5px 0.5px grey;
+}
+/*********HEADER END*******/
+@media only screen and (min-width: 1025px) {
+        .login-section{
+			padding-top: 50px;
+		}
+		.image{
+			width: 500px;
+			height: 150px;
+		}
+		.log-out{
+			position: absolute;
+			top: 4px;
+			right: 50px;
+		}
+		.fix{
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+		}
+}
+.notice-board{
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+.btr{
+	background-color: #386d6c;
+	color: white;
+}
+.bt{
+	background-color: #356d6d;
+	color:white;
+}
+.tab h5{
+	margin: 0px;
+	padding: 2px 0px 1px 10px;
+	background-color: #1e304c;
+	color: white;
+	border: solid 1px black;
+}
+.notice-board nav{
+	background-color: #356d6d;
+	border: solid 1px black;
+}
+li a{
+	color: white;
+}
+.scroll{
+	max-height: 120px;
+	overflow: auto;
+}
+/*******************FOOTER*******************/
+.foot{
+	background-color: black;
+	color: white;
+}
+/***************RECRUITER-LOGIN***************************/
+.recruiter-login{
+	padding: 60px 0px 220px 0px;
+}
+h4{
+	padding-bottom: 5px;
+	background-color: #29204e;
+	color: white;
+}
+/***************USER LOGIN****************************/
+.user-login{
+	padding: 120px 0px 220px 0px;
+}
+/****************** USER PAGE***********************/
+.profile-table{
+	max-width: 600px;
+	font-size: small;
+}
+.user-img{
+	padding-bottom: 10px
+}
+center h3{
+	background-color: #29204e;
+    color: white;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+.form-group label{
+	background-color: lightgrey;
+    border-radius: 4px;
+    padding: 5px;
+    border: grey;
+    color: #564a4a;
+}
+.recommended-jobs{
+	max-height: 200px;
+	overflow: auto;
+	margin-bottom: 10px;
+}
+/******************** RECRUITER PAGE***********************/
+.job-form{
+	padding: 60px 0px 180px 0px;
+}

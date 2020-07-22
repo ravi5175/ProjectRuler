@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>APPLICATIONS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Neuton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet/style.css') }}">
+</head>
+
+<body>
+    <!----------------------------- HEADER START ------------------------>
+    <div class="header">
+        <div class="container">
+            <div class="navbar-header">
+                <center>
+                    <h2>
+                        <a href="localhost:8080/route">JOB RECOMMENDER</a>
+                    </h2>
+                    <button type="button" class="btn btn-primary log-out">Log Out</button>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------HEADER END--------------------------->
+    <div class="container">
+        <center>
+            <div class="col-md-6 applications_table">
+                <center>
+                    <h3>APPLICATIONS</h3>
+                </center>
+                <nav class="navbar recommended-jobs">
+                    <table class="table">
+                        <thead>
+                            <tr class="table-primary">
+                                <th>Applicant Name</th>
+                                <th>Email</th>
+                                <th>Contact</th>
+                                <th>Address</th>
+                                <th>Category</th>
+                                <th>Gender</th>
+                                <th>D.O.B</th>
+
+                            </tr>
+                        </thead>
+                        {%for i in applicants%}
+                        <tbody>
+                            <tr class="table-warning">
+                                <td>{{i[1]}}</td>
+                                <td>{{i[2]}}</td>
+                                <td>{{i[3]}}</td>
+                                <td>{{i[4]}}</td>
+                                <td>{{i[5]}}</td>
+                                <td>{{i[6]}}</td>
+                                <td>{{i[7]}}</td>
+                            </tr>
+                            {%endfor%}
+                        </tbody>
+                    </table>
+                </nav>
+            </div>
+        </center>
+    </div>
+    <!----------------------- FOOTER START------------------------------>
+    <footer class="foot fixed-bottom">
+        <div class="container text-center">
+            <small>Designed by: Archana Kumari,Ravi Pawar,Kapil Bansal and Sandip Baidya<br>Copyright &copy; EduScent</small>
+        </div>
+    </footer>
+    <!-------------------------FOOTER END------------------------>
+</body>
+
+</html>

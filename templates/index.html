@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JOB RECOMMENDER</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Neuton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet/style.css') }}">
+</head>
+
+<body class="index_body">
+    <!----------------------------- HEADER START ------------------------>
+    <div class="header">
+        <div class="container">
+            <div class="navbar-header">
+                <center>
+                    <h2>
+                        <a href="localhost:8080/route">JOB RECOMMENDER</a>
+                    </h2>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------HEADER END--------------------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+                <center>
+                    <div class="col-md-12 video_box">
+                        <video width="450px" height="250px" controls>
+                        <source src="/static/video/music.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </center>
+                <center>
+                    <div class="col-md-12 clearfix big_box">
+                        <h5><b>Login</b></h5>
+                        <div class="col-md-6 float-left box">
+                            <form method="post" id="index" target="_self">
+                                <button type="submit" value="userlogin" name="app_login" class="btn btn-lg btn-block bta" formtarget="_self"><b>Applicant</b></button>
+                            </form>
+                        </div>
+                        <div class="col-md-6 float-left box">
+                            <form method="post" id="index" target="_self">
+                                <button type="submit" value="userlogin" name="rec_login" class="btn btn-lg btn-block btr" formtarget="_self"><b>Recruiter</b></button>
+                            </form>
+                        </div>
+                    </div>
+                </center>
+                <center>
+                    <div class="col-md-12 clearfix big_box">
+                        <h5><b>Registeration</b></h5>
+                        <div class="col-md-6 float-left">
+                            <form method="post" id="index" target="_self">
+                                <button type="submit" value="userlogin" name="app_reg" class="btn btn-lg btn-block bta" formtarget="_self"><B>Applicant</B></button>
+                            </form>
+                        </div>
+                        <div class="col-md-6 float-left">
+                            <form method="post" id="index" target="_self">
+                                <button type="submit" value="userlogin" name="rec_reg" class="btn btn-lg btn-block btr" formtarget="_self"><B>Recruiter</B></button>
+                            </form>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!----------------------- FOOTER START------------------------>
+    <footer class="foot fixed-bottom">
+        <div class="container text-center">
+            <small>Designed by: Archana Kumari,Ravi Pawar,Kapil Bansal and Sandip Baidya<br>Copyright &copy; EduScent</small>
+        </div>
+    </footer>
+    <!-------------------------FOOTER END------------------------>
+</body>
+
+</html>
